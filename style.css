@@ -38,6 +38,7 @@ section { padding: 80px 0; }
 /* NAVBAR */
 .navbar {
   background: var(--bg-secondary);
+  border-bottom: 2px solid var(--accent);
   position: sticky;
   top: 0;
   z-index: 100;
