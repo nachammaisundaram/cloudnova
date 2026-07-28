@@ -75,4 +75,4 @@ Branches: `main`, `development`, `feature/navbar`, `feature/contact`
 - Vercel: `<add your Vercel URL here>`
 
 ## Author
-Naz — DevOps & Cloud Intern, Devine Innovation
+Nachammai — DevOps & Cloud Intern, Devine Innovation
