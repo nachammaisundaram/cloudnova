@@ -144,7 +144,7 @@ section { padding: 80px 0; }
   flex-wrap: wrap;
   gap: 10px;
 }
-.footer p { color: var(--grey); font-size: 1rem; }
+.footer p { color: var(--accent-light); font-size: 0.9rem; }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
