@@ -100,6 +100,24 @@ if (logoText) {
   });
 }
 
+// Hero illustration: gentle 3D tilt that follows the cursor
+const heroIllustration = document.getElementById('heroIllustration');
+if (heroIllustration) {
+  heroIllustration.addEventListener('mousemove', (e) => {
+    const rect = heroIllustration.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateY = ((x - centerX) / centerX) * 10;
+    const rotateX = -((y - centerY) / centerY) * 10;
+    heroIllustration.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+  });
+  heroIllustration.addEventListener('mouseleave', () => {
+    heroIllustration.style.transform = '';
+  });
+}
+
 // Contact form handling (demo only - no backend)
 const form = document.getElementById('contactForm');
 const status = document.getElementById('formStatus');

@@ -216,13 +216,28 @@ section { padding: 80px 0; }
 .hero-text { flex: 1 1 400px; }
 .hero-text h1 { font-size: 2.6rem; margin-bottom: 20px; }
 .hero-text p { color: var(--grey); margin-bottom: 30px; max-width: 500px; }
-.hero-image { flex: 1 1 300px; text-align: center; }
+.hero-image { flex: 1 1 300px; text-align: center; perspective: 800px; }
 .hero-illustration {
-  font-size: 8rem;
   background: var(--bg-secondary);
   border-radius: 20px;
-  padding: 60px;
+  padding: 40px;
   display: inline-block;
+  animation: float 4s ease-in-out infinite;
+  transition: transform 0.15s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.hero-illustration img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-illustration { animation: none; }
 }
 
 /* CARDS */
