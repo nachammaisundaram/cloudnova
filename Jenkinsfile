@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "cloudnova-site"
-        CONTAINER_NAME = "cloudnova-container"
-        HOST_PORT = "8081"
+            IMAGE_NAME = "cloudnova-site"
+            CONTAINER_NAME = "cloudnova-container"
+            HOST_PORT = "8081"
+            DOCKER_HOST = "tcp://localhost:2375"
     }
 
     stages {
