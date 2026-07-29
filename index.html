@@ -11,47 +11,19 @@
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="container nav-inner">
-      <div class="logo" id="logoText">Cloud<span>Nova</span></div>
-      <a href="#contact" class="btn btn-primary get-started-desktop">Get Started</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="logo">Cloud<span>Nova</span></div>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn btn-primary">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
     </div>
   </header>
-
-  <div class="backdrop" id="backdrop"></div>
-
-  <nav class="nav-panel" id="navPanel" aria-hidden="true">
-    <ul class="panel-links">
-      <li>
-        <a href="#home"><span class="idx">01</span>Home</a>
-        <p class="preview">Back to the top — CloudNova's mission at a glance.</p>
-      </li>
-      <li>
-        <a href="#about"><span class="idx">02</span>About</a>
-        <p class="preview">Who we are and why we build the way we do.</p>
-      </li>
-      <li>
-        <a href="#services"><span class="idx">03</span>Services</a>
-        <p class="preview">DevOps, Cloud, Docker and CI/CD — end to end.</p>
-      </li>
-      <li>
-        <a href="#projects"><span class="idx">04</span>Projects</a>
-        <p class="preview">A look at what we've shipped recently.</p>
-      </li>
-      <li>
-        <a href="#contact"><span class="idx">05</span>Contact</a>
-        <p class="preview">Start a conversation about your next build.</p>
-      </li>
-    </ul>
-    <div class="panel-footer">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Twitter</a>
-    </div>
-  </nav>
 
   <!-- HERO -->
   <section class="hero" id="home">
@@ -62,7 +34,7 @@
         <a href="#services" class="btn btn-primary">Explore Services</a>
       </div>
       <div class="hero-image">
-        <div class="hero-illustration" id="heroIllustration">
+        <div class="hero-illustration">
           <img src="hero-illustration.svg" alt="CloudNova cloud infrastructure illustration" width="280">
         </div>
       </div>
