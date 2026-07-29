@@ -73,11 +73,14 @@ section { padding: 80px 0; }
 .hero-text p { color: var(--grey); margin-bottom: 30px; max-width: 500px; }
 .hero-image { flex: 1 1 300px; text-align: center; }
 .hero-illustration {
-  font-size: 8rem;
   background: var(--bg-secondary);
   border-radius: 20px;
-  padding: 60px;
+  padding: 30px;
   display: inline-block;
+}
+.hero-illustration img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* CARDS */
