@@ -6,6 +6,9 @@
   --white: #F8FAFC;
   --grey: #94A3B8;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -166,4 +169,15 @@ section { padding: 80px 0; }
   .hamburger { display: block; }
   .card-grid, .card-grid.four { grid-template-columns: 1fr; }
   .hero-text h1 { font-size: 2rem; }
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
