@@ -163,3 +163,22 @@ section { padding: 80px 0; }
   .card-grid, .card-grid.four { grid-template-columns: 1fr; }
   .hero-text h1 { font-size: 2rem; }
 }
+
+/* Hover glow effect */
+.card {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card:hover {
+  border-color: var(--accent-light);
+  box-shadow: 0 0 24px rgba(96, 165, 250, 0.35);
+  transform: translateY(-4px);
+}
+
+.btn-primary {
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+  background: var(--accent-light);
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.45);
+  transform: translateY(-2px);
+}
