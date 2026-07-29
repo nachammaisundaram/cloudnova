@@ -71,8 +71,8 @@ Branches: `main`, `development`, `feature/navbar`, `feature/contact`
 - **Vercel:** Connected to GitHub repo, auto-deploy on push to `main`, live URL provided by Vercel.
 
 ## Live URLs
-- Netlify: `<add your Netlify URL here>`
-- Vercel: `<add your Vercel URL here>`
+- Netlify: https://marvelous-platypus-7c7e02.netlify.app
+- Vercel: https://cloudnova-sigma.vercel.app/
 
 ## Author
 Nachammai — DevOps & Cloud Intern, Devine Innovation
